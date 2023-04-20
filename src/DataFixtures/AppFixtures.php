@@ -21,7 +21,7 @@ class AppFixtures extends Fixture
             $note = new Article();
             $note->setTitre('Ma note sur ' . $technos[$i])
             ->setDescription('Description de la note sur ' . $technos[$i])
-            ->setImage('https://dummyimage.com/300x400/343a40/6c757d')
+            ->setImage('https://picsum.photos/200/300?random='.$i)
             ->setContenu('Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.')
             ->setCreatedAt(new \DateTimeImmutable('yesterday'));
             // Ajoute la note à la base de données
